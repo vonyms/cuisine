@@ -1,5 +1,9 @@
 nav {
     padding-top: 30px;
+    @media screen and (max-width: 1024px) {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
     .nav {
         display: flex;
         justify-content: space-between;
@@ -38,6 +42,9 @@ nav {
             }
             &--link {
                 transition: all .5s ease;
+                @media screen and (max-width: 1024px) {
+                color: var(--white);
+                }
                 &:hover {
                     font-weight: bold;
                 }
@@ -59,16 +66,57 @@ nav {
                     display: none;
                 }
             }
+            &--link {
+                
+                @media screen and (max-width: 1024px) {
+                    color: var(--white);
+                }
+            }
         }
         .nav-close {
             display: none;
             position: absolute;
-            right: 0;
+            right: -15px;
             top: 50%;
             transform: translateY(-50%);
             @media screen and (max-width: 1024px) {
                 display: block;
+                transform: initial;
+                top: -29px;
             }
+        }
+        svg {
+            width: 16px;
+            padding-top: 5px;
+        }
+        
+        
+    }
+    
+}
+
+.nav-mobile{
+    transition: all .5s ease;
+    @media screen and (max-width: 1024px) {
+    background-color: var(--secondary-1);
+    }
+    &.opened {
+        height: 100vh;
+        background-color: var(--secondary-1);
+        .nav-menu--list {
+            display: flex;
+            gap: 17px;
+            padding-top: 58px;
+            padding-bottom: 44px;
+            font-size: 20px;
+            
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+            }
+        }
+        
+        .nav-btn--list {
+            display: flex;
         }
     }
 }

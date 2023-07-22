@@ -1,22 +1,26 @@
 .card {
+
+    // Default card type
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+
     &-item {
         width: 34%;
         flex: 1 1 34%;
         min-width: 156px;
         max-width: 245px;
-        &--intern {
 
-        }
+        &--intern {}
+
         &--image {
             img {
                 width: 100%;
                 border-radius: 20px 20px 0 0;
             }
         }
+
         &--body {
             display: flex;
             flex-direction: column;
@@ -29,29 +33,35 @@
     }
 
     &-title {
-            text-align: center;
-            font-family: Lato;
+        text-align: center;
+        font-family: Lato;
+
         &-bold {
             font-size: 28px;
             font-family: 'Arvo';
             padding-bottom: 10px;
             font-style: normal;
             font-weight: 700;
-            line-height: 126.432%; /* 60.687px */
+            line-height: 126.432%;
+            /* 60.687px */
             letter-spacing: 0.24px;
             text-transform: capitalize;
             height: 70px;
+
             @media screen and (max-width: 1024px) {
                 height: initial;
             }
         }
+
         &-1 {
             font-size: 13px;
             font-weight: 600;
-            line-height: 170.432%; /* 34.086px */
+            line-height: 170.432%;
+            /* 34.086px */
             letter-spacing: 0.1px;
             text-transform: capitalize;
         }
+
         &-2 {
             color: #6B5E4E;
             font-size: 10px;
@@ -59,12 +69,15 @@
         }
     }
 
+    // Card Type 2
     &.card-type-2 {
         gap: 60px;
         flex-wrap: wrap;
+
         @media screen and (max-width: 1024px) {
             gap: initial;
         }
+
         .card-item {
             &--image {
                 img {
@@ -72,10 +85,28 @@
                     height: 150px;
                 }
             }
+
             &--body {
                 gap: 10px;
                 box-shadow: initial;
             }
+        }
+    }
+
+    // Card Type 3 = Small
+    &-small {
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.25);
+        width: 76px;
+        height: 76px;
+        padding: 10px;
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 13px;
+        img {
+            max-width: 22px;
         }
     }
 }

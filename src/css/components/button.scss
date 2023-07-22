@@ -40,7 +40,7 @@
     }
 }
 
-.outilined-rounded {
+.outlined-rounded {
     border: 1px solid var(--primary);
     border-radius: 50%;
     width: 32px;
@@ -51,5 +51,6 @@
     transition: all .5s ease;
     &:hover {
         background-color: var(--primary);
+        color: var(--white);
     }
 }

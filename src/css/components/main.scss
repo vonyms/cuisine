@@ -1,4 +1,5 @@
 .main {
+    position: relative;
     .banner {
         &-content {
             display: flex;
@@ -25,6 +26,29 @@
             }
             &--bg-image {
                 height: 100%;
+                position: relative;
+                .floating {
+                    position: absolute;
+                    z-index: 1;
+                    @media screen and (max-width: 1024px) {
+                        display: none;
+                    }
+                    &-1 {
+                        top: 13px;
+                        right: 120px;
+                        img {
+                           width: 45px; 
+                        }
+                    }
+                    &-2 {
+                        top: 13px;
+                        left: 100px;
+                    }
+                    &-3 {
+                        bottom: 18px;
+                        right: 88px;
+                    }
+                }
             }
             &--img {
                 position: relative;

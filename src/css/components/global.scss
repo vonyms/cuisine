@@ -31,6 +31,7 @@ a {
 .section {
     padding: 50px 0;
     text-align: center;
+    position: relative;
 
     .title-1 {
         padding-bottom: 30px;
@@ -96,5 +97,22 @@ a {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+}
+
+.align-center {
+    align-items: center;
+}
+
+.ellipse {
+    position: absolute;
+    width: 30%;
+    &-1 {
+        bottom: -270px;
+        left: -168px;
+    }
+    &-2 {
+        bottom: -100px;
+        right: 0;
     }
 }
