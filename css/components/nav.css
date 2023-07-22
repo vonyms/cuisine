@@ -1,0 +1,123 @@
+nav {
+  padding-top: 30px;
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav {
+    flex-direction: column;
+    align-items: start;
+    gap: initial;
+  }
+}
+nav .nav-logo .logo {
+  width: 70px;
+  height: auto;
+}
+nav .nav-menu {
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.8s ease;
+}
+nav .nav-menu--list {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-menu--list {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-menu--list {
+    display: none;
+  }
+}
+nav .nav-menu--item {
+  text-transform: uppercase;
+}
+nav .nav-menu--link {
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-menu--link {
+    color: var(--white);
+  }
+}
+nav .nav-menu--link:hover {
+  font-weight: bold;
+}
+nav .nav-btn--list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-btn--list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav .nav-btn--link {
+    color: var(--white);
+  }
+}
+nav .nav .nav-close {
+  display: none;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1024px) {
+  nav .nav .nav-close {
+    display: block;
+    transform: initial;
+    top: -29px;
+  }
+}
+nav .nav svg {
+  width: 16px;
+  padding-top: 5px;
+}
+
+.nav-mobile {
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 1024px) {
+  .nav-mobile {
+    background-color: var(--secondary-1);
+  }
+}
+.nav-mobile.opened {
+  height: 100vh;
+  background-color: var(--secondary-1);
+}
+.nav-mobile.opened .nav-menu--list {
+  display: flex;
+  gap: 17px;
+  padding-top: 58px;
+  padding-bottom: 44px;
+  font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .nav-mobile.opened .nav-menu--list {
+    font-size: 14px;
+  }
+}
+.nav-mobile.opened .nav-btn--list {
+  display: flex;
+}/*# sourceMappingURL=nav.css.map */

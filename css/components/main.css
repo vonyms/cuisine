@@ -1,0 +1,92 @@
+.main {
+  position: relative;
+}
+.main .banner-content {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .main .banner-content {
+    flex-direction: column;
+  }
+}
+.main .banner-item {
+  flex: 1 1 50%;
+  width: 50%;
+  padding-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .main .banner-item {
+    flex: initial;
+    width: initial;
+    padding-top: 40px;
+  }
+}
+.main .banner-item--intern {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 80%;
+}
+.main .banner-item--bg-image {
+  height: 100%;
+  position: relative;
+}
+.main .banner-item--bg-image .floating {
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .main .banner-item--bg-image .floating {
+    display: none;
+  }
+}
+.main .banner-item--bg-image .floating-1 {
+  top: 13px;
+  right: 120px;
+}
+.main .banner-item--bg-image .floating-1 img {
+  width: 45px;
+}
+.main .banner-item--bg-image .floating-2 {
+  top: 13px;
+  left: 100px;
+}
+.main .banner-item--bg-image .floating-3 {
+  bottom: 18px;
+  right: 88px;
+}
+.main .banner-item--img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .banner-item--img::after {
+  content: "";
+  background-color: var(--primary);
+  width: 64%;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .main .banner-item--img::after {
+    width: 34%;
+  }
+}
+.main .banner-item--img img {
+  max-width: 67%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .main .banner-item--img img {
+    width: 36%;
+  }
+}/*# sourceMappingURL=main.css.map */

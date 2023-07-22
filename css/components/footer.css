@@ -1,0 +1,76 @@
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+footer a {
+  color: var(--white);
+  transition: all 0.5s ease;
+}
+footer a:hover {
+  color: var(--primary);
+}
+footer .footer-title {
+  font-family: "Arvo";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 30px;
+  position: relative;
+}
+footer .footer-title:after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  background-color: var(--secondary-1);
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+footer .footer--list {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer--list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer--list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 414px) {
+  footer .footer--list {
+    grid-template-columns: 1fr;
+  }
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+footer .footer-content--item {
+  padding-bottom: 19px;
+  text-transform: capitalize;
+}
+footer .footer-content--item--intern {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+footer .footer-content--icon svg {
+  width: 17px;
+}
+footer .footer-content p {
+  line-height: 1.5;
+  text-align: center;
+}
+footer .footer-logo {
+  width: 145px;
+}/*# sourceMappingURL=footer.css.map */
